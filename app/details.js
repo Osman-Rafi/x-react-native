@@ -5,7 +5,7 @@ const Details = () => {
   const router = useRouter();
 
   return (
-    <View>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text
         onPress={() => {
           router.back();
