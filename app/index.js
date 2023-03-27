@@ -1,7 +1,7 @@
 import { SafeAreaView, ScrollView, View } from "react-native";
 import { useRouter, Stack } from "expo-router";
 
-import { COLORS, icons, SIZES } from "../constants";
+import { COLORS, icons, SIZES, images } from "../constants";
 import {
   ScreenHeaderBtn,
   Welcome,
@@ -19,10 +19,10 @@ const Home = () => {
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.menu} dimension={"100%"} />
+            <ScreenHeaderBtn iconUrl={icons.menu} dimension={"60%"} />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn iconUrl={icons.profile} dimension={"100%"} />
+            <ScreenHeaderBtn iconUrl={images.profile} dimension={"100%"} />
           ),
           headerTitle: "",
         }}
